@@ -19,8 +19,8 @@ This script was designed for internal use at VOICE1 to update our hosted client 
 ## Usage
 
 ```
-python add_ssl_certs.py --help
-usage: add_ssl_certs.py [-h] [--key KEY] [--cert CERT] [--ca-bundle CA_BUNDLE]
+python switchvox_ssl.py --help
+usage: switchvox_ssl.py [-h] [--key KEY] [--cert CERT] [--ca-bundle CA_BUNDLE]
                         [--ca-certs CA_CERTS] [--regcode REGCODE]
                         [--host HOST] [--username USERNAME]
                         [--password PASSWORD]
@@ -72,11 +72,11 @@ Using shell variables.
 export RSA_PRIVATE_KEY=/path/to/ssl_cert/switchvoxuc.key
 export X509_CERTIFICATE=/path/to/ssl_cert/switchvoxuc.crt
 export INTERMEIDATE_CA_CERTIFICATE=/path/to/ssl_cert/switchvoxuc.ca.crt
-python add_ssl_certs.py direct --host 192.168.10.60 --username admin --password "Your$uper3a$$w0rD"
+python switchvox_ssl.py direct --host 192.168.10.60 --username admin --password "Your$uper3a$$w0rD"
 ```
 Using file paths
 ```
-python add_ssl_certs.py direct --host 192.168.10.60 --username admin --password "Your$uper3a$$w0rD" \
+python switchvox_ssl.py direct --host 192.168.10.60 --username admin --password "Your$uper3a$$w0rD" \
 --key /path/to/ssl_cert/switchvoxuc.key \
 --cert /path/to/ssl_cert/switchvoxuc.crt \
 --ca-bundle /path/to/ssl_cert/switchvoxuc.ca.crt
