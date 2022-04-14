@@ -16,6 +16,12 @@ This script was designed for internal use at VOICE1 to update our hosted client 
 - python requests
 - loguru
 
+### Debian 11 prerequisites hints 
+    apt install python3-colorama python3-requests
+
+Grab loguru package from wget http://ftp.us.debian.org/debian/pool/main/l/loguru/python3-loguru_0.6.0-1_all.deb
+    dpkg -i ./python3-loguru_0.6.0-1_all.deb
+
 ## Usage
 
 ```
